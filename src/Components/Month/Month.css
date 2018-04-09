@@ -1,4 +1,5 @@
 td{
   border: solid 1px black;
-  height: 50px;
+  height: 100px;
+  min-width: 100px;
 }
