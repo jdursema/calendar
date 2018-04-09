@@ -1,9 +1,9 @@
 import React from 'react';
+import Day from '../Day/Day'
 
 const Week = (props) => {
-  console.log(props)
-  const mappedDays= props.week.map((day) => {
-    return <td>{day}</td>
+  const mappedDays= props.week.map((day, index) => {
+    return <Day day={day} weekday={index} clickedDayFunction = {props.clickedDayFunction}/>
   })
   return (
     <tr>
